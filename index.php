@@ -41,7 +41,7 @@ htmlTable::displayTable($records);
 //Displays one record from accounts table
 htmlTable::displayTitle("Select one record from : accounts");
 $record = accounts::findOne(8);
-htmlTable::displayMessage('Selected Id : 8');
+htmlTable::displayMessage('Select record with id : 8');
 htmlTable::displayTable($record);
 
 
@@ -68,7 +68,7 @@ htmlTable::displayTable($records);
 htmlTable::displayTitle("Delete record from : accounts");
 $record->id = $savedRecord[1];
 $record->delete();
-htmlTable::displayMessage('Deleted Id : '.$record->id);
+htmlTable::displayMessage('Delete record with id : '.$record->id);
 $records = accounts::findAll();
 htmlTable::displayTable($records);
 
@@ -84,7 +84,7 @@ htmlTable::displayTable($records);
 //Displays one record from todos table
 htmlTable::displayTitle("Select one record from : todos");
 $record = todos::findOne(4);
-htmlTable::displayMessage('Selected Id : 4');
+htmlTable::displayMessage('Select record with id : 4');
 htmlTable::displayTable($record);
 
 //Inserting record in todos table
@@ -111,7 +111,7 @@ htmlTable::displayTable($records);
 htmlTable::displayTitle("Delete record from : todos");
 $record->id = $savedRecord[1];
 $record->delete();
-htmlTable::displayMessage('Deleted Id : '.$record->id);
+htmlTable::displayMessage('Delete record with id : '.$record->id);
 $records = todos::findAll();
 htmlTable::displayTable($records);
 
