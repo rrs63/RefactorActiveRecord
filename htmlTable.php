@@ -1,6 +1,6 @@
 <?php
 
-class htmlTable {
+class htmlTable  {
     static private $html = '';   
 
     //This function can be called to display table 

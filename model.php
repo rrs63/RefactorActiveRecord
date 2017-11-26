@@ -1,6 +1,6 @@
 <?php
 
-abstract class model {
+abstract class model  {
     protected $tableName;
     public function save()
     {      

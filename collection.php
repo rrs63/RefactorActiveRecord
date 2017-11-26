@@ -1,6 +1,6 @@
 <?php
 
-abstract class collection {  
+abstract class collection { 
 
     static public function findAll() {
 
