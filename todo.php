@@ -1,6 +1,6 @@
 <?php
 
-class todo extends model {
+final class todo extends model {
 	//column names of todos table
     public $id;
     public $owneremail;

@@ -23,12 +23,12 @@ spl_autoload_register(array('Manage', 'autoload'));
 
 
 //class contains methods to fetch data from todos table
-class todos extends collection {
+final class todos extends collection {
     protected static $modelName = 'todo';
 }
 
 //class contains methods to fetch data from accounts table
-class accounts extends collection {
+final class accounts extends collection {
     protected static $modelName = 'account';
 }
 

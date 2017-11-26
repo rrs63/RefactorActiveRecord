@@ -1,6 +1,6 @@
 <?php
 
-class account extends model {
+final class account extends model {
 	//column names of accounts table
     public $id;
     public $email;
